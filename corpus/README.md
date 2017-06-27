@@ -10,4 +10,4 @@ These meta-data files contain columns for the three emotional dimensions (Valenc
 
 The IDs for sentences taken from MASC follow the pattern <documentName>_<beginIndex>_<endIndex> which refers to the file names and the sentence boundary annotations as included in the MASC release 3.0.0. For the news headlines taken from SemEval, the IDs follow the pattern SemEval_<originalSemEvalId>.
 
-The script combine.R combines those individual files into a single R data frame (only taken into account the sentences which received sufficient ratings for both reader and writer perspective).
+The script combine.R combines those individual files into a single R data frame (only taken into account the sentences which received sufficient ratings for both reader and writer perspective). reader.R and writer.R produce data frames only containing the sentences and the reader or the writer VAD values, respectively, without any additional meta data.
