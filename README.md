@@ -10,7 +10,7 @@ EmoBank comprises 10k sentences balancing multiple genres. It is special for hav
 The raw data of EmoBank is gathered from [MASC](http://www.anc.org/data/masc/), the manually annotated subcorpus of the ANC (Ide et al., 2010) and the [SemEval 2007 Task 14](http://nlp.cs.swarthmore.edu/semeval/tasks/task14/summary.shtml) (Strapparava & Mihalcea, 2007). The raw data of the pilot studies is taken from MASC and the [Standford Sentiment Treebank](https://nlp.stanford.edu/sentiment/treebank.html) (Socher et al., 2013), originally collected by Pang and Lee (2005).
 
 ## License
-This work is licensed under CC-BY 4.0: https://creativecommons.org/licenses/by/4.0/
+This work is licensed under CC-BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Citation
 Please cite the following papers if you use EmoBank:
