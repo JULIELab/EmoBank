@@ -14,7 +14,7 @@ This work is licensed under CC-BY 4.0: https://creativecommons.org/licenses/by/4
 
 ## Citation
 Please cite the following papers if you use EmoBank:
-* Sven Buechel and Udo Hahn. 2017. EmoBank: Studying the Impact of Annotation Perspective and Representation Format on Dimensional Emotion Analysis. In EACL 2017 - Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics. Valencia, Spain, April 3-7, 2017.
+* Sven Buechel and Udo Hahn. 2017. EmoBank: Studying the Impact of Annotation Perspective and Representation Format on Dimensional Emotion Analysis. In EACL 2017 - Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics. Valencia, Spain, April 3-7, 2017. Volume 2, Short Papers, pages 578-585. Available: http://aclweb.org/anthology/E17-2092
 
 * Sven Buechel and Udo Hahn. 2017. Readers vs. writers vs. texts: Coping with different perspectives of text understanding in emotion annotation. In LAW 2017 - Proceedings of the 11th Linguistic Annotation Workshop @ EACL 2017. Valencia, Spain, April 3, 2017, pages 1-12. Available: https://sigann.github.io/LAW-XI-2017/papers/LAW01.pdf
 
@@ -22,10 +22,9 @@ Please cite the following papers if you use EmoBank:
 I am happy answer questions and give additional information via email: sven.buechel@uni-jena.de
 
 ## References
-*Nancy C. Ide, Collin F. Baker, Christiane Fellbaum, and Rebecca J. Passonneau. 2010. The Manually Annotated Sub-Corpus: A community resource for and by the people. In ACL 2010 — Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics. Uppsala, Sweden, 11-16 July 2010, volume 2: Short Papers, pages 68–73.
-*Bo Pang and Lillian Lee. 2005. Seeing stars: Exploiting class relationships for sentiment categorization with respect to rating scales. In ACL 2005 — Proceedings of the 43rd Annual Meeting of the Association for Computational Linguistics. Ann
-Arbor, Michigan, USA, June 25–30, 2005, pages 115–124.
-*Richard Socher, Alex Perelygin, Jean Y. Wu, Jason Chuang, Christopher D. Manning, Andrew Y. Ng, and Christopher Potts. 2013. Recursive deep models for semantic compositionality over a sentiment treebank. In EMNLP 2013 — Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing. Seattle, Washington, USA, 18-21 October 2013, pages 1631–1642.
-*Carlo Strapparava and Rada Mihalcea. 2007. SemEval-2007 Task 14: Affective text. In SemEval 2007 — Proceedings of the 4th In- ternational Workshop on Semantic Evaluations @ ACL 2007. Prague, Czech Republic, June 23-24, 2007, pages 70–74.
+* Nancy C. Ide, Collin F. Baker, Christiane Fellbaum, and Rebecca J. Passonneau. 2010. The Manually Annotated Sub-Corpus: A community resource for and by the people. In ACL 2010 — Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics. Uppsala, Sweden, 11-16 July 2010, volume 2: Short Papers, pages 68–73.
+* Bo Pang and Lillian Lee. 2005. Seeing stars: Exploiting class relationships for sentiment categorization with respect to rating scales. In ACL 2005 — Proceedings of the 43rd Annual Meeting of the Association for Computational Linguistics. AnnArbor, Michigan, USA, June 25–30, 2005, pages 115–124.
+* Richard Socher, Alex Perelygin, Jean Y. Wu, Jason Chuang, Christopher D. Manning, Andrew Y. Ng, and Christopher Potts. 2013. Recursive deep models for semantic compositionality over a sentiment treebank. In EMNLP 2013 — Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing. Seattle, Washington, USA, 18-21 October 2013, pages 1631–1642.
+* Carlo Strapparava and Rada Mihalcea. 2007. SemEval-2007 Task 14: Affective text. In SemEval 2007 — Proceedings of the 4th International Workshop on Semantic Evaluations @ ACL 2007. Prague, Czech Republic, June 23-24, 2007, pages 70–74.
 
 
