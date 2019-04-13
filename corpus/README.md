@@ -485,7 +485,8 @@ def load_emobank(path):
 
 ```python
 import csv
-eb = load_emobank(".")
+eb = load_emobank(".")  # This assumes that /.../EmoBank/corpus is your working directory. 
+                        # Otherwise make sure to insert the correct path to /.../EmoBank/corpus between the quotes.
 eb.to_csv("emobank.csv", quoting = csv.QUOTE_NONNUMERIC)
 ```
 
