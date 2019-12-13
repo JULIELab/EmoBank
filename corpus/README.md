@@ -1,4 +1,3 @@
-
 # 0 Folder Content
 
 This folder contains raw and meta data of EmoBank. In particular, it contains
@@ -28,30 +27,31 @@ print(eb.shape)
 eb.head()
 ```
 
-    (10062, 4)
+    (10062, 5)
 
 
 
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
+      <th>split</th>
       <th>V</th>
       <th>A</th>
       <th>D</th>
@@ -63,11 +63,13 @@ eb.head()
       <th></th>
       <th></th>
       <th></th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>110CYL068_1036_1079</th>
+      <td>train</td>
       <td>3.00</td>
       <td>3.00</td>
       <td>3.20</td>
@@ -75,6 +77,7 @@ eb.head()
     </tr>
     <tr>
       <th>110CYL068_1079_1110</th>
+      <td>test</td>
       <td>2.80</td>
       <td>3.10</td>
       <td>2.80</td>
@@ -82,6 +85,7 @@ eb.head()
     </tr>
     <tr>
       <th>110CYL068_1127_1130</th>
+      <td>train</td>
       <td>3.00</td>
       <td>3.00</td>
       <td>3.00</td>
@@ -89,6 +93,7 @@ eb.head()
     </tr>
     <tr>
       <th>110CYL068_1137_1188</th>
+      <td>train</td>
       <td>3.44</td>
       <td>3.00</td>
       <td>3.22</td>
@@ -96,6 +101,7 @@ eb.head()
     </tr>
     <tr>
       <th>110CYL068_1189_1328</th>
+      <td>train</td>
       <td>3.55</td>
       <td>3.27</td>
       <td>3.46</td>
@@ -126,45 +132,45 @@ for d in ["V", "A", "D"]:
     D              3.8
     text    "Fuck you"
     Name: A_defense_of_Michael_Moore_12034_12044, dtype: object
-
+    
     Max V:
     V                                4.6
     A                                4.3
     D                                3.7
     text    lol Wonderful Simply Superb!
     Name: vampires_4446_4474, dtype: object
-
-
+    
+    
     Min A:
     V                                              3.1
     A                                              1.8
     D                                              3.1
     text    I was feeling calm and private that night.
     Name: Nathans_Bylichka_2070_2112, dtype: object
-
+    
     Max A:
     V                            4.3
     A                            4.4
     D                            3.4
     text    "My God, yes, yes, yes!"
     Name: captured_moments_28728_28752, dtype: object
-
-
+    
+    
     Min D:
     V                                                       2
     A                                                       3
     D                                                    1.78
     text    I shivered as I walked past the pale man’s bla...
     Name: Nathans_Bylichka_40025_40116, dtype: object
-
+    
     Max D:
     V        1.7
     A        3.9
     D        4.2
     text    “NO”
     Name: defenders5_3431_3435, dtype: object
-
-
+    
+    
 
 
 ## 1.3 Loading Individual Parts
@@ -463,21 +469,21 @@ def load_emobank(path):
     reader = pd.read_csv(path / "reader.csv", index_col=0)
 
     common = sorted(list(set(writer.index).intersection(set(reader.index))))
-
+    
     # redefine reader, writer as arrays
     N_reader = (reader.loc[common,"N"]).values.reshape((len(common),1))
     N_writer = (writer.loc[common,"N"]).values.reshape((len(common),1))
-
+    
     reader = (reader.loc[common, ["V", "A","D"]]).values
     writer = (writer.loc[common, ["V", "A","D"]]).values
-
+     
     #compute weighted average of annotations
     combined = ( (reader * N_reader) + (writer * N_writer) ) / (N_reader + N_writer)
-
+    
     combined = pd.DataFrame(columns = ["V", "A", "D"], data=combined, index=common).round(2)
     combined["text"] = raw.loc[common]
     combined.index.rename("id", inplace=True)
-
+    
     assert combined.shape == (10062, 4)
     return combined
 ```
@@ -485,8 +491,7 @@ def load_emobank(path):
 
 ```python
 import csv
-eb = load_emobank(".")  # This assumes that /.../EmoBank/corpus is your working directory. 
-                        # Otherwise make sure to insert the correct path to /.../EmoBank/corpus between the quotes.
+eb = load_emobank(".")
 eb.to_csv("emobank.csv", quoting = csv.QUOTE_NONNUMERIC)
 ```
 

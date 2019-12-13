@@ -3,6 +3,9 @@
 ## Overview
 This repository contains EmoBank, a large-scale text corpus manually annotated with emotion according to the psychological Valence-Arousal-Dominance scheme. It was build at JULIE Lab, Jena University and is described in detail in our papers from EACL 2017 and LAW 2017 (see Citation). The repository contains two folders: "corpus" which contains the actual Emobank data (described in the EACL paper) and "pilot" which contains the data from our pilot study (described in the LAW paper). See the readme files in the respective folders for more detailed information regarding the data format.
 
+## News
+* December 2019. We added a train-dev-test split to the  dataset which can be found in `EmoBank/corpus/emobank.csv`. The data split is stratified with respect to text category (fiction, letters, newspaper,...). The code for creating the split can be found in `EmoBank/corpus/adding_data_split.ipynb`. We recommend using this split for model evaluation to increase comparability.
+
 ## Characteristics
 EmoBank comprises 10k sentences balancing multiple genres. It is special for having two kinds of double annotations: Each sentence was annotated according to both the emotion which is expressed by the writer, and the emotion which is perceived by the readers. Also, a subset of the corpus have been previously annotated according to Ekmans 6 Basic Emotions (Strapparava and Mihalcea, 2007) so that mappings between both representation formats become possible.
 
