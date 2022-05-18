@@ -4,7 +4,9 @@ This folder contains raw and meta data of EmoBank. In particular, it contains
 * ```raw.csv```: The raw textual data.
 * ```meta.tsv```: The source and genre meta-data.
 * ```reader.csv```: The gold ratings from the reader perspective
-* ```writer.csv```: The gold ratings fromt the writer perspective
+* ```writer.csv```: The gold ratings from the writer perspective
+* ```individual_reader_ratings.csv```: The original, per-annotator ratings from the reader perspective
+* ```individual_writer_ratings.csv```: The original, per-annotator ratings from the writer perspective
 * ```emobank.csv```: Weighted average of reader and writer annotations. **Use this file by default.**
 
 # 1 Loading EmoBank
