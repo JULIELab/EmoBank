@@ -1,5 +1,8 @@
 # EmoBank
 
+[![DOI](https://zenodo.org/badge/81328559.svg)](https://zenodo.org/badge/latestdoi/81328559)
+
+
 ## Overview
 This repository contains EmoBank, a large-scale text corpus manually annotated with emotion according to the psychological Valence-Arousal-Dominance scheme. It was build at JULIE Lab, Jena University and is described in detail in our papers from EACL 2017 and LAW 2017 (see Citation). The repository contains two folders: "corpus" which contains the actual Emobank data (described in the EACL paper) and "pilot" which contains the data from our pilot study (described in the LAW paper). See the readme files in the respective folders for more detailed information regarding the data format.
 
